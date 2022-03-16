@@ -2,12 +2,69 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>The Plant Scheduler</title>
+        <link rel="icon" href="./assets/isolated-logo.png" class="filter-green">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">    
+        <title>Wuddr</title>
     </head>
-
     <body>
-        <h1>Hello</h1>
+        <header class="main-nav">
+            <img class="logo" src="logo/vector/default-monochrome.svg" alt="Wuddr Logo">
+        </header>
+        
+
+        <main>
+            <!-- Introducing you to the site -->
+            <section class="container">
+                <section class="intro-banner">
+                    <h1>Welcome to Wuddr</h1>
+                    <h2>Your easy to use water scheduling app.</h2>
+                    <p>
+                        To get started, input the last date that you watered your plants, an estimate of your indoor temperature, and how wet the soil is.
+                        The calculator will let you know the next date you should water your plants and how long to wait between each watering session. 
+                        This is for a standard 10" pot, future pot sizes to be added at a later date.
+                    </p>
+                </section>
+            </section>
+
+            <!-- The actual scheduler -->
+            <section class="container">
+                <div class="calc">
+                    <div class="data">
+                        <label for="last-watered">How long since you last watered your plants?</label>
+                        <input type="number" class="user-info" id="last-watered" placeholder="Enter the number of days">
+                        <label for="damp-depth">Roughly how far down does it feel damp in cm?</label>
+                        <input type="number" class="user-info" id="damp-depth">
+                        <label for="temp">How's the temperature in your plant's home?</label>
+                        <!-- <select class="user-info" id="temp">
+                            <option value="">--Choose from the options--</option>
+                            <option value="hot">Hot</option>
+                            <option value="comfortable">Comfortable</option>
+                            <option value="cool">Cool</option>
+                        </select> -->
+                        <div class="buttonSpot">
+                            <button id="hot" class="tempBtn">Hot</button>
+                            <button id="comfortable" class="tempBtn">Comfortable</button>
+                            <button id="cold" class="tempBtn">Cool</button>
+                        </div>
+                    </div>
+                    <button id="submit">Submit</button>
+                </div>
+
+                <section>
+                    <h2 id="result"></h2>
+                </section>
+            </section>
+
+            
+        </main>
+
+        <footer>
+            <p>Site by Gab &#x1F99D;</p>
+        </footer>
+
         <script src="app.js"></script>
     </body>
 </html>

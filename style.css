@@ -1,3 +1,130 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #344731;
+    color: #ffffff;
+    font-size: 62.5%;
+}
+
 h1 {
-    color: blue;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6 rem;
+}
+
+p, label {
+    font-size: 1rem;
+}
+
+input, select {
+    margin: 0 10px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: #344731;
+    margin-bottom: 100px;
+}
+
+.main-nav {
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+}
+
+.container {
+    margin: 70px;
+    width: 50%;
+}
+
+.intro-banner {
+    padding: 0 40px;
+    
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.calc {
+    max-width: 800px;
+}
+
+button {
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+#submit {
+    padding: 5px 20px;
+    background: #f58549;
+}
+
+.active, #submit:hover {
+    background: #6c9365;
+    color:#000000;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #344731;
+    margin-top: 100px;
+}
+
+footer p {
+    font-size: 1.3rem; 
+}
+
+.logo {
+    max-width: 350px;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        margin: 75px 0 30px 0;
+    }
+
+    .calc {
+        padding: 0 80px;
+        margin-bottom: 50px;
+    }
+}
+
+input {
+    -webkit-appearance: none;
+    border-radius: 3px;
 }
